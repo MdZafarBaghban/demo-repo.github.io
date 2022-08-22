@@ -5,94 +5,81 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="	https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css">
+    <style>
+        body{
+            padding: 20px 80px;
+            margin: 0px;
+        }
+        h1{
+            text-align: center;
+            text-decoration: underline;
+        }
+        img{
+            width: 100%;
+            height: auto;
+            margin: 0 auto;
+        }
+        p{
+            font-size: 18px;
+            text-align: justify;
+        }
+        .btn{
+            width: 20px;
+            height: 20px;
+            display: inline-block;
+            border: 2px solid grey;
+            border-radius: 50%;
+            cursor: pointer;
+            margin: 2px;
+        }
+        #white{
+            background-color: white;
+        }
+        #aqua{
+            background-color: aquamarine;
+        }
+        #voilet{
+            background-color: #ce0aff;
+        }
+        #black{
+            background-color: black;
+        }
+        #color-switcher{
+            text-align: right;
+        }
+    </style>
 </head>
 <body>
-    <div>
-    <!-- navbar starts here -->
-    <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
-        <div class="container-fluid">
-          <a class="navbar-brand" href="#">Navbar</a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-              <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#">Home</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Link</a>
-              </li>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link disabled">Disabled</a>
-              </li>
-            </ul>
-            <form class="d-flex" role="search">
-              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-              <button class="btn btn-outline-success bg-success text-white" type="submit">Search</button>
-            </form>
-          </div>
-        </div>
-      </nav>
+    <div id="color-switcher">
+        <span class="btn" id="white" onclick="changeBG('#ffffff')">
+        </span>
+        <span class="btn" id="aqua" onclick="changeBG('#7fffd4')">
+        </span>
+        <span class="btn" id="voilet" onclick="changeBG('#ce9aff')">
+        </span>
+        <span class="btn" id="black" onclick="changeBG('#000000')">
+        </span>
     </div>
-    <!-- navbar ends here -->
-    <!-- card starts -->
-    <div class="card-group">
-        <div class="card">
-          <img src="https://i.pinimg.com/736x/50/73/8d/50738dc612fc3cf59eb7370b33f385f1.jpg" class="card-img-top" alt=".\..">
-          <div class="card-body">
-            <h5 class="card-title">Card title</h5>
-            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-            <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
-          </div>
-        </div>
-        <div class="card">
-          <img src="https://i.pinimg.com/736x/50/73/8d/50738dc612fc3cf59eb7370b33f385f1.jpg" class="card-img-top" alt="..\.">
-          <div class="card-body">
-            <h5 class="card-title">Card title</h5>
-            <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
-            <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
-          </div>
-        </div>
-        <div class="card">
-          <img src="https://i.pinimg.com/736x/50/73/8d/50738dc612fc3cf59eb7370b33f385f1.jpg" class="card-img-top" alt=".\..">
-          <div class="card-body">
-            <h5 class="card-title">Card title</h5>
-            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
-            <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
-          </div>
-        </div>
-      </div>
-      <!-- second partition -->
-      <div class="card-group">
-        <div class="card">
-          <img src="https://i.pinimg.com/736x/50/73/8d/50738dc612fc3cf59eb7370b33f385f1.jpg" class="card-img-top" alt=".\..">
-          <div class="card-body">
-            <h5 class="card-title">Card title</h5>
-            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-            <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
-          </div>
-        </div>
-        <div class="card">
-          <img src="https://i.pinimg.com/736x/50/73/8d/50738dc612fc3cf59eb7370b33f385f1.jpg" class="card-img-top" alt="..\.">
-          <div class="card-body">
-            <h5 class="card-title">Card title</h5>
-            <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
-            <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
-          </div>
-        </div>
-        <div class="card">
-          <img src="https://i.pinimg.com/736x/50/73/8d/50738dc612fc3cf59eb7370b33f385f1.jpg" class="card-img-top" alt=".\..">
-          <div class="card-body">
-            <h5 class="card-title">Card title</h5>
-            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
-            <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
-          </div>
-        </div>
-      </div>
-    <!-- card ends -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"></script>
+    <h1 class="text">About us</h1>
+
+    <img src="about us.jpg" alt="About us">
+
+    <p class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi incidunt quia explicabo facilis illo magni, pariatur error a sequi mollitia, nihil quasi, animi eius porro laboriosam. Dignissimos nisi consectetur a suscipit expedita blanditiis, aspernatur amet provident excepturi, libero, ullam impedit rem nulla tempora enim deleniti qui eum sit assumenda ab. Expedita unde ipsam et magnam neque totam harum rem omnis, placeat ullam cupiditate laboriosam blanditiis iste dolorem soluta odit quibusdam perspiciatis sint aspernatur! Sint facere rem eligendi odio quia nostrum reprehenderit animi laboriosam expedita, ab impedit quasi minima, nihil officiis eius. Atque consectetur tenetur unde voluptatum nisi? Dolore vel aspernatur neque dolorem minus odit repellat unde sit illum excepturi repudiandae, voluptates aut maxime sequi laborum voluptatibus illo nostrum consectetur blanditiis soluta qui pariatur veniam fugit nobis. Corrupti fuga voluptatibus vero consectetur quo, velit optio in hic, atque at, quas veniam magni dolorum? Optio, iusto alias! Quaerat nobis earum ipsa, quisquam sint ratione excepturi alias recusandae, adipisci, nisi iure a. Illo eveniet provident libero, ea porro consectetur voluptatem quo tempora, vel ratione culpa dolorem nemo id rem quidem qui fuga reiciendis cum odit excepturi architecto exercitationem reprehenderit! Voluptates iusto excepturi tempora accusantium minus, ipsa magni facere saepe at libero velit ad accusamus laboriosam ipsum ea perferendis, ipsam minima, tempore fugit reiciendis. Ipsa, perferendis delectus modi quasi, qui odit deserunt excepturi hic cum repellat necessitatibus officia quas quod ad dicta dignissimos vitae non ipsum sapiente magnam accusamus dolore dolorem nemo? Quos corporis culpa deserunt voluptatem voluptatum recusandae dolor a deleniti temporibus modi ratione, corrupti mollitia, obcaecati quia dolorem quod alias quae dolores. Eveniet, ex ad? Nihil, soluta doloribus? Impedit, modi libero. Deleniti ipsum voluptatum ipsam laboriosam beatae adipisci sapiente, nesciunt aut error suscipit officia pariatur mollitia facilis veritatis eius quo esse autem minus consequuntur libero. Magnam voluptas itaque ratione, nihil rerum cum in, nobis maiores eum ipsa accusantium perspiciatis doloribus id impedit ipsam, necessitatibus labore quis eos mollitia dolorem omnis. Nam rerum ab aliquam perferendis facere soluta libero ipsa esse cum laborum quaerat fuga eligendi, ex, sapiente hic explicabo, corporis ut eos repudiandae sit recusandae molestiae. Sapiente id aspernatur neque ducimus! Sequi ipsam rerum distinctio, blanditiis voluptatem aliquid praesentium, perspiciatis quam architecto expedita, et corrupti! Aliquam officiis voluptatem voluptatibus odio maxime qui reprehenderit sapiente temporibus incidunt eum, voluptate repellendus libero reiciendis magnam consequatur corporis voluptas nemo debitis labore quod unde ipsam. Placeat mollitia reiciendis eos iusto ex doloribus ipsa, explicabo illum minus maxime in facilis est suscipit itaque nisi numquam. Consequuntur voluptas earum accusamus officiis sapiente soluta repudiandae expedita adipisci facilis dicta porro fuga similique sed, aliquid praesentium amet est nobis at ipsam quas dolore libero? Esse ipsa numquam, facere neque officiis nisi! Veritatis dolorum at corporis, mollitia quod debitis. Temporibus, quis id enim earum libero eveniet, corrupti, ratione porro voluptatibus neque officiis veniam. Fugiat atque commodi eaque sed unde officia quia et, facere voluptate illo voluptatem itaque culpa fugit ab harum tenetur velit ratione iusto possimus quos excepturi iste suscipit quae. Veniam, dolores aliquam! Porro voluptatum cumque consectetur, repellat fugiat iste?</p>
+
+    <script>
+        function changeBG(color){
+            document.body.style.backgroundColor = color;
+            let txt = document.getElementsByClassName("text");
+            if(color == "#000000"){
+                for(let elm of txt){
+                    elm.style.color = "white";
+                }
+            }else{
+                for(let elm of txt){
+                    elm.style.color = "black";
+            }
+          }
+        }
+    </script>
 </body>
 </html>
